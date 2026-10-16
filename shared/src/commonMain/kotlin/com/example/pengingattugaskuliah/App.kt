@@ -49,7 +49,7 @@ fun App() {
 
                 Text("1. Adhitya Warman - 124140007")
                 Text("2. Muhammad Ghifar - 124140091")
-                Text("3. [Nama Teman 2] - [NIM Teman 2]")
+                Text("3. Roy Kurniawan - 124140024")
                 Text("4. [Nama Teman 3] - [NIM Teman 3]")
             }
         }

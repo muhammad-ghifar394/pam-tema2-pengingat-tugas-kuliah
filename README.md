@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
 
 * [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
@@ -33,3 +34,15 @@ Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
 ---
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+=======
+# Tema 2. Pengingat Tugas Kuliah
+
+## Identitas Kelompok
+
+| No. | Nama Anggota | NIM | Jabatan |
+| :-: | :--- | :--- | :--- |
+| 1 | Adhitya Warman | 124140007 | Ketua |
+| 2 | [Nama Anggota 2] | [NIM] | Anggota |
+| 3 | [Nama Anggota 3] | [NIM] | Anggota |
+| 4 | [Nama Anggota 4] | [NIM] | Anggota |
+>>>>>>> 17d5c0aeaee879ef459f8cdb747960edfd7c9c6c

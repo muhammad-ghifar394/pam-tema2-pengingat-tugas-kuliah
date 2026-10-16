@@ -43,7 +43,7 @@ fun App() {
 
             if (tampilkanTentang) {
                 Text("Tema: Pengingat Tugas Kuliah")
-                Text("Platform: Android")
+                Text("Platform: ${getPlatform().name}")
 
                 Text("Anggota Kelompok:")
 

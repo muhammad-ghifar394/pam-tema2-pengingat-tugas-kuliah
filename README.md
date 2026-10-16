@@ -9,5 +9,4 @@
 | 3 | Muhammad Ghifar | 124140091 | Anggota |
 | 4 | Reza Lesmana Julgi | 124140115 | Anggota |
 
-## Dokumentasi
-![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/df78344158af137167cd25af14f97d68b2c49e0a/DOKUM/PAM/Pertemuan1/Pert1.png)
+

@@ -48,8 +48,9 @@ fun App() {
                 Text("Anggota Kelompok:")
 
                 Text("1. Adhitya Warman - 124140007")
-                Text("2. [Nama Teman 1] - [NIM Teman 1]")
+                Text("2. Muhammad Ghifar - 124140091")
                 Text("3. [Nama Teman 2] - [NIM Teman 2]")
+                Text("4. [Nama Teman 3] - [NIM Teman 3]")
             }
         }
     }

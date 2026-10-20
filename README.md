@@ -41,3 +41,4 @@ Sesudah collect
 ```
 
 ## Dokumentasi
+![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/306be806e3176316e191b77e8d986c41721e1383/DOKUM/PAM/Pertemuan2/dokum.png)

@@ -12,7 +12,8 @@
 | 4 | Reza Lesmana Julgi | 124140115 | Anggota |
 
 ## Dokumentasi
-![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/df78344158af137167cd25af14f97d68b2c49e0a/DOKUM/PAM/Pertemuan1/Pert1.png)
+
+<img src="https://github.com/AW2606/fotodokumtugas/blob/df78344158af137167cd25af14f97d68b2c49e0a/DOKUM/PAM/Pertemuan1/Pert1.png" alt="Dokumentasi Pertemuan 1" width="500">
 
 
 ## Pertemuan 2. Model Data, Coroutines, dan Flow

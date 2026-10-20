@@ -64,7 +64,6 @@ kotlin {
     }
 }
 
-// Menampilkan println dari test ke konsol (bukti berjalan Pertemuan 2)
 tasks.withType<Test>().configureEach {
     testLogging {
         showStandardStreams = true

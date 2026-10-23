@@ -12,7 +12,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -23,6 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.pengingattugaskuliah.data.daftarTugasPalsu
+import com.example.pengingattugaskuliah.model.label
 
 @Composable
 @Preview
@@ -38,11 +38,7 @@ fun App() {
 
         Scaffold(
             floatingActionButton = {
-                FloatingActionButton(
-                    onClick = { }
-                ) {
-                    Text("+")
-                }
+                TombolTambahTugas()
             }
         ) { innerPadding ->
 

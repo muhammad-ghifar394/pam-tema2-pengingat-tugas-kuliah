@@ -62,5 +62,5 @@ Yang dibuat minggu ini:
 | Reza Lesmana Julgi | Pembuatan FAB `AksiTugas.kt` dan dokumentasi |
 
 ## Dokumentasi
-![Dokumentasi Pertemuan 3](DOKUM_PERTEMUAN_3.png)
+![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/1b07e37eb86fde05b57a7885fdf0e28cc4cfb2c4/DOKUM/PAM/pertemuan3/dokum.jpeg)
 

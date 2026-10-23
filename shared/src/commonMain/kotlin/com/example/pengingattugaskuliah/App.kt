@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
-import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -22,7 +21,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.pengingattugaskuliah.data.daftarTugasPalsu
-import com.example.pengingattugaskuliah.model.label
 
 @Composable
 @Preview
@@ -101,27 +99,7 @@ fun App() {
                     items = daftarTugas,
                     key = { tugas -> tugas.id }
                 ) { tugas ->
-                    Card(
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Column(
-                            modifier = Modifier.padding(16.dp)
-                        ) {
-                            Text(
-                                text = tugas.judul,
-                                style = MaterialTheme.typography.titleMedium,
-                                fontWeight = FontWeight.Bold
-                            )
-
-                            Text("Mata kuliah: ${tugas.mataKuliah.nama}")
-                            Text("Tenggat: ${tugas.tenggat}")
-                            Text("Status: ${tugas.status.label()}")
-
-                            if (tugas.catatan != null) {
-                                Text("Catatan: ${tugas.catatan}")
-                            }
-                        }
-                    }
+                    CardTugas(tugas = tugas)
                 }
             }
         }

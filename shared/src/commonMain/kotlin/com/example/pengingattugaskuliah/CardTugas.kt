@@ -38,7 +38,7 @@ fun CardTugas(tugas: Tugas) {
             Spacer(modifier = Modifier.height(6.dp))
 
             Text(
-                text = tugas.mataKuliah.nama
+                text = "Mata kuliah: ${tugas.mataKuliah.nama}"
             )
 
             Text(

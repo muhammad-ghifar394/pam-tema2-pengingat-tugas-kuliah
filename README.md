@@ -43,3 +43,24 @@ Sesudah collect
 
 ## Dokumentasi
 ![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/306be806e3176316e191b77e8d986c41721e1383/DOKUM/PAM/Pertemuan2/dokum.png)
+
+## Pertemuan 3. Layar Daftar untuk Tema Kelompok
+
+Yang dibuat minggu ini:
+
+- Layar daftar menggunakan `LazyColumn` yang menampilkan data tugas dari `daftarTugasPalsu`.
+- Komponen `CardTugas` untuk menampilkan informasi tugas (judul, mata kuliah, tenggat, dan catatan) beserta label status dari sealed class `StatusTugas`.
+- Fungsi `olahDaftarTugas` di `PengolahanTugas.kt` untuk mengurutkan tugas sebelum ditampilkan berdasarkan tenggat waktu (`sortedBy`).
+- Komponen `TombolTambahTugas` sebagai tombol aksi utama (Floating Action Button / FAB) pada `Scaffold`.
+- Penambahan data dummy di `DataTugasPalsu.kt` menjadi 10 item tugas.
+
+| Nama Anggota | Bagian |
+| :--- | :--- |
+| Adhitya Warman | Logika pengolahan data (`PengolahanTugas.kt`) dan integrasi layar utama (`App.kt`) |
+| Roy Kurniawan | Penyiapan 10 data tugas dummy di `DataTugasPalsu.kt` |
+| Muhammad Ghifar | Pembuatan composable `CardTugas.kt` |
+| Reza Lesmana Julgi | Pembuatan FAB `AksiTugas.kt` dan dokumentasi |
+
+## Dokumentasi
+![Dokumentasi Pertemuan 3](DOKUM_PERTEMUAN_3.png)
+

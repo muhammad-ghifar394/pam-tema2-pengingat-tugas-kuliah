@@ -91,13 +91,13 @@ Yang dibuat minggu ini:
 
 Screenshot tampilan form untuk memasukkan judul tugas, mata kuliah, dan tenggat waktu.
 
-![Form Tambah Tugas](screenshots/pertemuan4-form.png)
+taro foto disini dit1
 
 **2. Daftar Tugas Setelah Data Ditambahkan**
 
 Screenshot tampilan daftar tugas setelah tugas baru berhasil disimpan dan muncul pada daftar.
 
-![Daftar Tugas Setelah Data Ditambahkan](screenshots/pertemuan4-hasil.png)
+taro foto disini dit2
 
 ### Hasil Pengerjaan
 

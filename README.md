@@ -64,3 +64,41 @@ Yang dibuat minggu ini:
 ## Dokumentasi
 ![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/1b07e37eb86fde05b57a7885fdf0e28cc4cfb2c4/DOKUM/PAM/pertemuan3/dokum.jpeg)
 
+## Pertemuan 4. State dan MVVM
+
+### Yang dibuat minggu ini:
+
+- Pembuatan form tambah tugas untuk memasukkan judul tugas, mata kuliah, dan tenggat waktu.
+- Pembuatan komponen `KolomTeks.kt` sebagai input reusable yang bersifat stateless.
+- Pengelolaan state aplikasi menggunakan `TugasUiState.kt`.
+- Implementasi `TugasViewModel.kt` menggunakan `MutableStateFlow` dan `StateFlow`.
+- Validasi input untuk memastikan judul dan mata kuliah tidak kosong.
+- Integrasi form dengan `App.kt` agar tugas baru dapat ditambahkan ke daftar melalui tombol Simpan.
+- Pengujian proses penambahan tugas dan validasi input pada `commonTest`.
+
+### Pembagian Tugas Kelompok
+
+| Nama Anggota | Bagian |
+|---|---|
+| Muhammad Ghifar | Pengelolaan state UI (`TugasUiState.kt`) dan ViewModel (`TugasViewModel.kt`) |
+| Reza Lesmana Julgi | Pembuatan komponen input (`KolomTeks.kt`) dan form tambah tugas (`FormTambahTugas.kt`) |
+| Adhitya Warman | Integrasi form dan ViewModel pada `App.kt`, serta tombol tambah (`AksiTugas.kt`) |
+| Roy Kurniawan | Pengujian pada `commonTest` dan dokumentasi |
+
+### Dokumentasi
+
+**1. Form Tambah Tugas**
+
+Screenshot tampilan form untuk memasukkan judul tugas, mata kuliah, dan tenggat waktu.
+
+![Form Tambah Tugas](screenshots/pertemuan4-form.png)
+
+**2. Daftar Tugas Setelah Data Ditambahkan**
+
+Screenshot tampilan daftar tugas setelah tugas baru berhasil disimpan dan muncul pada daftar.
+
+![Daftar Tugas Setelah Data Ditambahkan](screenshots/pertemuan4-hasil.png)
+
+### Hasil Pengerjaan
+
+Checkpoint Pertemuan 4 mengembangkan aplikasi Pengingat Tugas Kuliah dengan menerapkan konsep state dan MVVM. State dan logika penambahan tugas dikelola melalui ViewModel, sedangkan tampilan menggunakan komponen Compose yang reusable. Pengguna dapat mengisi form dan menambahkan tugas ke daftar. Pengujian dilakukan untuk memeriksa validasi input dan proses penambahan tugas.

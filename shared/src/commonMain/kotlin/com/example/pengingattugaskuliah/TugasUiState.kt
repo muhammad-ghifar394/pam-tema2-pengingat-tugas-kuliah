@@ -9,5 +9,6 @@ data class TugasUiState(
     val mataKuliah: String = "",
     val tenggat: String = "",
     val pesanError: String? = null,
-    val tampilkanForm: Boolean = false
+    val tampilkanForm: Boolean = false,
+    val bisaSimpan: Boolean = false
 )

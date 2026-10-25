@@ -78,5 +78,25 @@ class TugasViewModelTest {
         assertEquals("", state.tenggat)
         assertNull(state.pesanError)
         assertFalse(state.tampilkanForm)
+        assertFalse(state.bisaSimpan)
+    }
+
+    @Test
+    fun bisaSimpanHanyaAktifJikaSemuaDataValid() {
+        val viewModel = TugasViewModel()
+        viewModel.bukaForm()
+        assertFalse(viewModel.uiState.value.bisaSimpan)
+
+        viewModel.ubahJudul("Tugas PAM Minggu 4")
+        assertFalse(viewModel.uiState.value.bisaSimpan)
+
+        viewModel.ubahMataKuliah("Pengembangan Aplikasi Mobile")
+        assertFalse(viewModel.uiState.value.bisaSimpan)
+
+        viewModel.ubahTenggat("format-salah")
+        assertFalse(viewModel.uiState.value.bisaSimpan)
+
+        viewModel.ubahTenggat("2026-11-05")
+        assertTrue(viewModel.uiState.value.bisaSimpan)
     }
 }

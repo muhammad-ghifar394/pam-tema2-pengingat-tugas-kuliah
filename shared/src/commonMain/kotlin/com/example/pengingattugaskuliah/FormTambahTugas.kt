@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -16,6 +17,7 @@ fun FormTambahTugas(
     mataKuliah: String,
     tenggat: String,
     pesanError: String?,
+    bisaSimpan: Boolean = false,
     onJudulBerubah: (String) -> Unit,
     onMataKuliahBerubah: (String) -> Unit,
     onTenggatBerubah: (String) -> Unit,
@@ -47,11 +49,15 @@ fun FormTambahTugas(
         )
 
         if (pesanError != null) {
-            Text(pesanError)
+            Text(
+                text = pesanError,
+                color = MaterialTheme.colorScheme.error
+            )
         }
 
         Button(
             onClick = onSimpan,
+            enabled = bisaSimpan,
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Simpan Tugas")

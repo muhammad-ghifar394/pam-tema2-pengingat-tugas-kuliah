@@ -15,10 +15,16 @@ class TugasViewModel : ViewModel() {
     val uiState: StateFlow<TugasUiState> =
         _uiState.asStateFlow()
 
+    private fun cekBisaSimpan(judul: String, mataKuliah: String, tenggat: String): Boolean {
+        return judul.isNotBlank() && mataKuliah.isNotBlank() && validasiTanggal(tenggat)
+    }
+
     fun bukaForm() {
-        _uiState.value = _uiState.value.copy(
+        val state = _uiState.value
+        _uiState.value = state.copy(
             tampilkanForm = true,
-            pesanError = null
+            pesanError = null,
+            bisaSimpan = cekBisaSimpan(state.judul, state.mataKuliah, state.tenggat)
         )
     }
 
@@ -30,23 +36,29 @@ class TugasViewModel : ViewModel() {
     }
 
     fun ubahJudul(nilai: String) {
-        _uiState.value = _uiState.value.copy(
+        val state = _uiState.value
+        _uiState.value = state.copy(
             judul = nilai,
-            pesanError = null
+            pesanError = null,
+            bisaSimpan = cekBisaSimpan(nilai, state.mataKuliah, state.tenggat)
         )
     }
 
     fun ubahMataKuliah(nilai: String) {
-        _uiState.value = _uiState.value.copy(
+        val state = _uiState.value
+        _uiState.value = state.copy(
             mataKuliah = nilai,
-            pesanError = null
+            pesanError = null,
+            bisaSimpan = cekBisaSimpan(state.judul, nilai, state.tenggat)
         )
     }
 
     fun ubahTenggat(nilai: String) {
-        _uiState.value = _uiState.value.copy(
+        val state = _uiState.value
+        _uiState.value = state.copy(
             tenggat = nilai,
-            pesanError = null
+            pesanError = null,
+            bisaSimpan = cekBisaSimpan(state.judul, state.mataKuliah, nilai)
         )
     }
 
@@ -96,7 +108,8 @@ class TugasViewModel : ViewModel() {
             mataKuliah = "",
             tenggat = "",
             pesanError = null,
-            tampilkanForm = false
+            tampilkanForm = false,
+            bisaSimpan = false
         )
     }
 

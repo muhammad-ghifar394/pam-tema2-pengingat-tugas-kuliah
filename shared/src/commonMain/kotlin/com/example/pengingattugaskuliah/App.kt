@@ -108,6 +108,7 @@ fun App() {
                             mataKuliah = state.mataKuliah,
                             tenggat = state.tenggat,
                             pesanError = state.pesanError,
+                            bisaSimpan = state.bisaSimpan,
                             onJudulBerubah = tugasViewModel::ubahJudul,
                             onMataKuliahBerubah =
                                 tugasViewModel::ubahMataKuliah,

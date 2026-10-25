@@ -89,15 +89,11 @@ Yang dibuat minggu ini:
 
 **1. Form Tambah Tugas**
 
-Screenshot tampilan form untuk memasukkan judul tugas, mata kuliah, dan tenggat waktu.
-
-taro foto disini dit1
+![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/f2321afc8c2c2bbf926852099b49f9cc4c792273/DOKUM/PAM/pertemuan4/sebelum.png)
 
 **2. Daftar Tugas Setelah Data Ditambahkan**
 
-Screenshot tampilan daftar tugas setelah tugas baru berhasil disimpan dan muncul pada daftar.
-
-taro foto disini dit2
+![Image Alt](https://github.com/AW2606/fotodokumtugas/blob/f2321afc8c2c2bbf926852099b49f9cc4c792273/DOKUM/PAM/pertemuan4/sesudah.png)
 
 ### Hasil Pengerjaan
 

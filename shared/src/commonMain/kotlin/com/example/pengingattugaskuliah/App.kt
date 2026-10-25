@@ -14,29 +14,35 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.pengingattugaskuliah.data.daftarTugasPalsu
+import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 @Preview
 fun App() {
     MaterialTheme {
+        val tugasViewModel: TugasViewModel = viewModel()
+        val state by tugasViewModel.uiState.collectAsState()
+
         var tampilkanTentang by remember {
             mutableStateOf(false)
         }
 
-        val daftarTugas = remember {
-            olahDaftarTugas(daftarTugasPalsu)
-        }
-
         Scaffold(
             floatingActionButton = {
-                TombolTambahTugas()
+                TombolTambahTugas(
+                    onClick = { tugasViewModel.bukaForm() }
+                )
             }
         ) { innerPadding ->
 
@@ -92,11 +98,28 @@ fun App() {
                         fontWeight = FontWeight.Bold
                     )
 
-                    Text("${daftarTugas.size} tugas terdaftar")
+                    Text("${state.daftarTugas.size} tugas terdaftar")
+                }
+
+                if (state.tampilkanForm) {
+                    item {
+                        FormTambahTugas(
+                            judul = state.judul,
+                            mataKuliah = state.mataKuliah,
+                            tenggat = state.tenggat,
+                            pesanError = state.pesanError,
+                            onJudulBerubah = tugasViewModel::ubahJudul,
+                            onMataKuliahBerubah =
+                                tugasViewModel::ubahMataKuliah,
+                            onTenggatBerubah = tugasViewModel::ubahTenggat,
+                            onSimpan = tugasViewModel::simpanTugas,
+                            onBatal = tugasViewModel::tutupForm
+                        )
+                    }
                 }
 
                 items(
-                    items = daftarTugas,
+                    items = olahDaftarTugas(state.daftarTugas),
                     key = { tugas -> tugas.id }
                 ) { tugas ->
                     CardTugas(tugas = tugas)
